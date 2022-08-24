@@ -84,11 +84,11 @@ class UserController extends Controller
         //
     }
 
-    // //Middleware
-    // public function __construct()
-    // {
-    //     $this->middleware('validBlogger');
-    // }
+    //Middleware
+    public function __construct()
+    {
+        $this->middleware('ValidUser');
+    }
 
     //User Dashboard
     public function dashboard()
