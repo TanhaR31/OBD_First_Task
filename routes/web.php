@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 
 /*
@@ -46,3 +47,10 @@ Route::post('/categoryCreate', [CategoryController::class, 'categoryCreateSubmit
 
 //Category List
 Route::get('/categoryList', [CategoryController::class, 'categoryList'])->name('categoryList');
+
+//Product
+Route::get('/productCreate', [ProductController::class, 'productCreate'])->name('productCreate');
+Route::post('/productCreate', [ProductController::class, 'productCreateSubmitted'])->name('productCreate');
+
+//Product List
+Route::get('/productList', [ProductController::class, 'productList'])->name('productList');

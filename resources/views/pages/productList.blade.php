@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Category List</title>
+    <title>Product List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
@@ -52,13 +52,25 @@
         <div class="row">
             <table class="table table-bordered">
                 <tr>
-                    <th>Id</th>
-                    <th>Category Name</th>
+                    <th>Product</th>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Price</th>
                 </tr>
-                @foreach($categories as $category)
+                @foreach($products as $product)
                 <tr>
-                    <td>{{$category->id}}</td>
-                    <td>{{$category->ct_name}}</td>
+                    <td><img src="{{asset('images/'.$product->p_image)}}" alt="User Profile Picture" width="45"
+                            height="40">
+                    </td>
+                    <td>{{$product->id}}</td>
+                    <td>{{$product->user_id}}</td>
+                    <td>{{$product->p_name}}</td>
+                    <td>{{$product->p_category}}</td>
+                    <td>{{$product->p_description}}</td>
+                    <td>{{$product->p_price}}</td>
                 </tr>
                 @endforeach
             </table>

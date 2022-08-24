@@ -88,6 +88,8 @@
             <a href="{{route('userList')}}" class="nav-item nav-link">All User</a>
             <a href="{{route('categoryCreate')}}" class="nav-item nav-link">Add Category</a>
             <a href="{{route('categoryList')}}" class="nav-item nav-link">All Category</a>
+            <a href="{{route('productCreate')}}" class="nav-item nav-link">Add Product</a>
+            <a href="{{route('productList')}}" class="nav-item nav-link">All Product</a>
             <div class="">
                 <button type="submit" class="" style="background-color: red">
                     <a href="{{route('logout')}}">LogOut</a></button>
