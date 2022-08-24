@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CategoryController;
 
 
 /*
@@ -38,3 +39,10 @@ Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard'
 
 //User List
 Route::get('/userList', [UserController::class, 'userList'])->name('userList');
+
+//Product Category
+Route::get('/categoryCreate', [CategoryController::class, 'categoryCreate'])->name('categoryCreate');
+Route::post('/categoryCreate', [CategoryController::class, 'categoryCreateSubmitted'])->name('categoryCreate');
+
+//Category List
+Route::get('/categoryList', [CategoryController::class, 'categoryList'])->name('categoryList');
