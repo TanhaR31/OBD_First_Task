@@ -5,6 +5,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
     <style>
     form {
         border: 3px solid #f1f1f1;
