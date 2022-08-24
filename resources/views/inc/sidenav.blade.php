@@ -84,7 +84,7 @@
         </div>
         @else
         <div class="navbar-nav ms-auto">
-            <a href="{{route('allUser')}}" class="nav-item nav-link">All Users</a>
+            <a href="{{route('dashboard')}}" class="nav-item nav-link">Dashboard</a>
             <div class="">
                 <button type="submit" class="" style="background-color: red">
                     <a href="{{route('logout')}}">LogOut</a></button>
