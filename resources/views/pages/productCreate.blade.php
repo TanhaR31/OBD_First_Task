@@ -5,7 +5,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add Category</title>
+    <title>Add Product</title>
     <style>
     form {
         border: 3px solid #f1f1f1;

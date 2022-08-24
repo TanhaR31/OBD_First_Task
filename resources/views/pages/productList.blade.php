@@ -43,7 +43,7 @@
     <header class="py-5 bg-light border-bottom mb-4">
         <div class="container">
             <div class="text-center my-5">
-                <h1 class="fw-bolder">Categories</h1>
+                <h1 class="fw-bolder">Your Product List</h1>
             </div>
         </div>
     </header>
@@ -76,12 +76,7 @@
             </table>
         </div>
     </div>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright © Your Website 2022</p>
-        </div>
-    </footer>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
@@ -90,6 +85,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+
+    <!-- Footer-->
+    <!-- <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright © Your Website 2022</p>
+        </div>
+    </footer> -->
+    <!-- Footer -->
 </body>
 
 </html>
