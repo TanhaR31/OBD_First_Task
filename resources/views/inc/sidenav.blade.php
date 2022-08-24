@@ -77,19 +77,21 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="{{route('index')}}">Index</a>
+        <!-- <a href="{{route('index')}}">Index</a> -->
         @if(!Session::has('user'))
         <div class="navbar-nav ms-auto">
             <a href="{{route('login')}}" class="nav-item nav-link">Login</a>
         </div>
         @else
         <div class="navbar-nav ms-auto">
+            <a href="" class="nav-item nav-link"> User Id : @if(Session::get('user')) {{Session::get('user')}}@endif
+            </a>
             <a href="{{route('dashboard')}}" class="nav-item nav-link">Dashboard</a>
             <a href="{{route('userList')}}" class="nav-item nav-link">All User</a>
             <a href="{{route('categoryCreate')}}" class="nav-item nav-link">Add Category</a>
             <a href="{{route('categoryList')}}" class="nav-item nav-link">All Category</a>
             <a href="{{route('productCreate')}}" class="nav-item nav-link">Add Product</a>
-            <a href="{{route('productList')}}" class="nav-item nav-link">All Product</a>
+            <a href="{{route('productList')}}" class="nav-item nav-link">Your Products</a>
             <div class="">
                 <button type="submit" class="" style="background-color: red">
                     <a href="{{route('logout')}}">LogOut</a></button>

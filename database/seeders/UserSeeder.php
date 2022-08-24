@@ -35,5 +35,15 @@ class UserSeeder extends Seeder
             'created_at' => '2022-08-24 08:22:27',
             'updated_at' => '2022-08-24 08:22:27'
         ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Mr. Z',
+            'phone' => 1999999999,
+            'email' => 'mrz@gmail.com',
+            'password' => '133631788e68ce51eb65eac86bc93753',
+            'address' => 'Banani, Dhaka',
+            'image' => 'mrz.jpg',
+            'created_at' => '2022-08-24 08:30:27',
+            'updated_at' => '2022-08-24 08:30:27'
+        ]);
     }
 }
