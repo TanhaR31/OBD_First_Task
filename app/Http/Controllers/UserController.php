@@ -83,4 +83,18 @@ class UserController extends Controller
     {
         //
     }
+
+    // //Middleware
+    // public function __construct()
+    // {
+    //     $this->middleware('validBlogger');
+    // }
+
+    //User Dashboard
+    public function dashboard()
+    {
+        $id = session()->get('user');
+        $user = User::where('id', $id)->first();
+        return view('pages.dashboard')->with('user', $user);
+    }
 }
