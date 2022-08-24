@@ -35,3 +35,6 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 //Blogger Dashboard
 Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
+
+//User List
+Route::get('/userList', [UserController::class, 'userList'])->name('userList');

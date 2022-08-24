@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -96,5 +97,11 @@ class UserController extends Controller
         $id = session()->get('user');
         $user = User::where('id', $id)->first();
         return view('pages.dashboard')->with('user', $user);
+    }
+
+    public function userList()
+    {
+        $users = DB::table('users')->get();
+        return view('pages.allUser')->with('users', $users);
     }
 }
