@@ -35,7 +35,7 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'loginSubmit'])->name('login');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-//Blogger Dashboard
+//User Dashboard
 Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
 
 //User List
