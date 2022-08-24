@@ -25,7 +25,7 @@ class LoginController extends Controller
             } else {
                 setcookie('remember', "");
             }
-            return redirect()->route('index');
+            return redirect()->route('dashboard');
         }
 
         return redirect()->back()->with('message', 'Email & Password Did Not Match');
